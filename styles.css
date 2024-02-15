@@ -1,31 +1,30 @@
-
-
 .The_Big_Words {
-    color: rgb(0, 120, 16);
+    color: #007bff; /* Updated color to a lighter blue */
+    font-family: 'Arial Narrow Bold', Impact, Haettenschweiler, sans-serif; /* Adjusted font stack */
 }
 
 .The_Most_Text_ever {
-    margin: 50px;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
+    margin: 20px; /* Reduced margin for better spacing */
+    color: #333; /* Darkened text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+    font-size: 16px; /* Slightly reduced font size */
 }
 
 .THE_LOT_CALLED_H, .T_HE_HDW {
-    scroll-behavior: auto;
+    scroll-behavior: smooth; /* Changed scroll behavior for smoother scrolling */
 }
 
 .T_HE_HDW {
-    background-color: darkseagreen;
-    margin: 10px;
-    padding: 5px;
+    background-color: #dee2e6; /* Lighter background color */
+    margin: 20px 10px; /* Adjusted margin */
+    padding: 20px; /* Kept padding consistent */
 }
 
 .TH_CON_IMGESSAF {
-    border: 5px solid #ddd;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    max-width: 400px;
+    border: 5px solid #adb5bd; /* Lightened border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Kept box shadow */
+    padding: 20px;
+    max-width: 100%; /* Adjusted max-width */
     margin: auto;
     text-align: center;
 }
@@ -34,48 +33,49 @@
     max-width: 100%;
     height: auto;
 }
-
 .CLICK_ME_LOTS {
+    position: relative;
+    top: -270px;
+    right: -200px;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: red;
+    padding: 12px 24px;
+    background-color: #dc3545; 
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
-    font-size: 20px;
+    border-radius: 25px; /* Rounder border */
+    font-size: 18px;
     font-weight: bold;
+    border: 2px solid transparent; /* Transparent border */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
 .CLICK_ME_LOTS:hover {
-    background-color: darkred;
+    background-color: #784348; /* Darker red on hover */
+    border-color: #e1dddd; /* Darker border color on hover */
 }
+
 
 @media (max-width: 768px) {
     .TH_CON_IMGESSAF {
-        padding: 5px;
+        padding: 15px;
     }
 
     .CLICK_ME_LOTS {
         font-size: 16px;
-        padding: 8px 15px;
+        padding: 10px 20px; /* Adjusted padding */
     }
 }
 
 @media (max-width: 480px) {
-    .TH_CON_IMGESSAF {
-        max-width: 100%;
-    }
-
     .CLICK_ME_LOTS {
         font-size: 14px;
-        padding: 5px 10px;
+        padding: 8px 15px; /* Adjusted padding */
     }
 }
 
 @media (max-width: 320px) {
     .CLICK_ME_LOTS {
-        font-size: 12px;
-        padding: 3px 8px;
+        font-size: 12px; /* Reduced font size for smaller screens */
+        padding: 6px 12px; /* Adjusted padding */
     }
 }
