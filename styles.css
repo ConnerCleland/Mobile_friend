@@ -1,38 +1,89 @@
+/* Styling for Big Words */
 .The_Big_Words {
     color: #007bff; /* Updated color to a lighter blue */
     font-family: 'Arial Narrow Bold', Impact, Haettenschweiler, sans-serif; /* Adjusted font stack */
 }
 
+/* Styling for Most Text Ever */
 .The_Most_Text_ever {
     margin: 20px; /* Reduced margin for better spacing */
     color: #333; /* Darkened text color */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
     font-size: 16px; /* Slightly reduced font size */
 }
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Adjust margin to create space between links */
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
+.nav-link:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+.nav-lin {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Adjust margin to create space between links */
+    text-decoration: none;
+    color: #fff;
+    background-color: #2ec53d;
+    font-style: oblique;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-lin:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+.nav-links {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Adjust margin to create space between links */
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Scroll Behavior Adjustment */
 .THE_LOT_CALLED_H, .T_HE_HDW {
     scroll-behavior: smooth; /* Changed scroll behavior for smoother scrolling */
 }
 
+/* Styling for TH_HE_HDW */
 .T_HE_HDW {
     background-color: #dee2e6; /* Lighter background color */
     margin: 20px 10px; /* Adjusted margin */
     padding: 20px; /* Kept padding consistent */
 }
 
+/* Styling for TH_CON_IMGESSAF */
 .TH_CON_IMGESSAF {
-    border: 5px solid #adb5bd; /* Lightened border color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Kept box shadow */
-    padding: 20px;
-    max-width: 100%; /* Adjusted max-width */
-    margin: auto;
     text-align: center;
+    margin: 20px auto; /* Add some margin and center the container horizontally */
+    max-width: 600px; /* Set a maximum width for better control on larger screens */
+    border-radius: 10px; /* Apply rounded corners for a polished look */
 }
 
+/* Styling for Images within TH_CON_IMGESSAF */
 .TH_CON_IMGESSAF img {
-    max-width: 100%;
-    height: auto;
+    display: block; /* Ensure the image is centered within its container */
+    max-width: 100%; /* Make sure the image doesn't exceed the container's width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 10px; /* Apply rounded corners to the image */
 }
+
+/* Styling for Donation Button */
 .CLICK_ME_LOTS {
     position: relative;
     top: -270px;
@@ -49,15 +100,16 @@
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
+/* Hover State for Donation Button */
 .CLICK_ME_LOTS:hover {
     background-color: #784348; /* Darker red on hover */
     border-color: #e1dddd; /* Darker border color on hover */
 }
 
-
+/* Media Queries */
 @media (max-width: 768px) {
     .TH_CON_IMGESSAF {
-        padding: 15px;
+        padding: 5px;
     }
 
     .CLICK_ME_LOTS {
